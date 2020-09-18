@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main (){
+int whatToAnalyze, posGroup, qb1Age, qb2Age, hb1Age, hb2Age, fbAge, wr1Age, wr2Age, wr3Age, te1Age, te2Age, ltAge, lgAge, cAge, rgAge, rtAge, leAge, dt1Age, dt2Age, reAge, lolbAge, mlb1Age, mlb2Age, rolbAge, cb1Age, cb2Age, cb3Age, fsAge, ssAge, kAge, pAge;
+double qb1Ovr, qb2Ovr, hb1Ovr, hb2Ovr, fbOvr, wr1Ovr, wr2Ovr, wr3Ovr, te1Ovr, te2Ovr, ltOvr, lgOvr, cOvr, rgOvr, rtOvr, leOvr, dt1Ovr, dt2Ovr, reOvr, lolbOvr, mlb1Ovr, mlb2Ovr, rolbOvr, cb1Ovr, cb2Ovr, cb3Ovr, fsOvr, ssOvr, kOvr, pOvr;
+string coachName, teamName;
+cout << "Hello, I am the team needs bot. I am here to analyze your team and help you find out what you should address, scheme, etc.\nWhat is your name coach?" << endl;
+cin >> coachName;
+cout << "Welcome Coach " << coachName << ", what is the name of your team?\n";
+cin >> teamName;
+cout << "Ok, Coach " << coachName << ", lets start analyzing the << teamName << ".\nDo you want to only look at one position group, one side of the ball, or the whole team?\nEnter (1) for Position Group, (2) for One Side, or (3) for Entire Team\n";
+cin >> whatToAnalyze;
+switch (whatToAnalyze){
+  case 1:
+    cout << "Alright! What position group do you want to look at Coach " << coachName << "?\nEnter (1) for QBs, (2) for RBs and FB, (3) for WRs, (4) for TEs and O-LINE, (5) for D-LINE, (6) for LBs, (7) for DBs, or (8) for K/P\n";
+    cin >> posGroup;
+    switch (posGroup)
+      case 1:
+        cout << "Ok! Let's see what the " << teamName << " have to offer at QB.\nFirst enter the OVR of your QB1: ";
+        cin >> qb1OVR;
+        cout << "Now enter the OVR of your QB2: ";
+        cin >> qb2Ovr;
+        cout << "Now we are going to look at age.\nEnter the age of your QB1: ";
+        cin >> qb1Age;
+        cout << "Enter the age of your QB2: ";
+        cin >> qb2Age;
+        double qbOvrDif = qb1Ovr - qb2Ovr;
+        int qbAgeDif = 
+    break;
